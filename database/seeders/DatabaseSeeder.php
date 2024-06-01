@@ -24,7 +24,9 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::create([
             'name' => 'Airevan',
             'email' => 'ivan@mail.com',
-            'password' => bcrypt("password")
+            'password' => bcrypt("password"),
+            'level' => 1,
+            'foto_profile' => null
         ]);
     }
 }
